@@ -4,7 +4,7 @@
 
 This is my study plan to become a hardcore software engineer.
 
-This long list has been extracted and expanded from **Google's coaching notes**, so these are the things you need to know.
+This long list has been made to guide myself to the path of being a software engineer. The list is highly motivated from [https://github.com/jwasham/google-interview-university] Google Interview University, so these are the things I need to know.
 
 ---
 ## Table of Contents
