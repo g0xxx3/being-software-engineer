@@ -1587,6 +1587,7 @@ Have a story, not just data, about something you accomplished.
 ## Video Series
 
 Sit back and enjoy. "Netflix and skill" :P
+- [ ] [Design and Analysis of Algorithm] (https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-design-and-analysis-of-algorithms-spring-2015/lecture-videos/)
 
 - [ ] [List of individual Dynamic Programming problems (each is short)](https://www.youtube.com/playlist?list=PLrmLmBdmIlpsHaNTPP_jHHDx_os9ItYXr)
 
