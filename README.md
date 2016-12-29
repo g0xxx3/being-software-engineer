@@ -134,81 +134,38 @@ This long list has been made to guide myself to the path of being a software eng
 - [ ] [Computer Architecture, Fifth Edition: A Quantitative Approach](https://www.amazon.com/dp/012383872X/)
     - Only the basics as this is a big book
 
-### C++
+### Algorithms and Data Structure
 
-- [ ] [Algorithms in C++, Parts 1-4: Fundamentals, Data Structure, Sorting, Searching](https://www.amazon.com/Algorithms-Parts-1-4-Fundamentals-Structure/dp/0201350882/)
-- [ ] [Algorithms in C++ Part 5: Graph Algorithms](https://www.amazon.com/Algorithms-Part-Graph-3rd-Pt-5/dp/0201361183/)
-
-### Java
-
+#### Java
 - [ ] [Algorithms (Sedgewick and Wayne)](https://www.amazon.com/Algorithms-4th-Robert-Sedgewick/dp/032157351X/)
     - videos with book content (and Sedgewick!):
         - [Algorithms I](https://www.youtube.com/user/algorithmscourses/playlists?view=50&sort=dd&shelf_id=2)
         - [Algorithms II](https://www.youtube.com/user/algorithmscourses/playlists?shelf_id=3&view=50&sort=dd)
-
-OR:
 
 - [ ] [Data Structures and Algorithms in Java](https://www.amazon.com/Data-Structures-Algorithms-Michael-Goodrich/dp/1118771338/)
     - by Goodrich, Tamassia, Goldwasser
     - used as optional text for CS intro course at UC Berkeley
     - see my book report on the Python version below. This book covers the same topics.
 
-### Python
-
+#### Python
 - [ ] [Data Structures and Algorithms in Python](https://www.amazon.com/Structures-Algorithms-Python-Michael-Goodrich/dp/1118290275/)
     - by Goodrich, Tamassia, Goldwasser
-    - I loved this book. It covered everything and more.
     - Pythonic code
-    - my glowing book report: https://googleyasheck.com/book-report-data-structures-and-algorithms-in-python/
 
-### Interview Prep
-
-- [ ] [Programming Interviews Exposed: Secrets to Landing Your Next Job, 2nd Edition](http://www.wiley.com/WileyCDA/WileyTitle/productCd-047012167X.html)
-    - answers in C++ and Java
-    - recommended in Google candidate coaching
-    - this is a good warm-up for Cracking the Coding Interview
-    - not too difficult, most problems may be easier than what you'll see in an interview (from what I've read)
-- [ ] [Cracking the Coding Interview, 6th Edition](http://www.amazon.com/Cracking-Coding-Interview-6th-Programming/dp/0984782850/)
-    - answers in Java
-    - recommended on the [Google Careers site](https://www.google.com/about/careers/how-we-hire/interview/)
-    
-### Optional Books
+#### Optional Books
 
 - [ ] [Algorithm Design Manual](http://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena/dp/1849967202) (Skiena)
-    - As a review and problem recognition
-    - The algorithm catalog portion is well beyond the scope of difficulty you'll get in an interview.
-    - This book has 2 parts:
-        - class textbook on data structures and algorithms
-            - pros:
-                - is a good review as any algorithms textbook would be
-                - nice stories from his experiences solving problems in industry and academia
-                - code examples in C
-            - cons:
-                - can be as dense or impenetrable as CLRS, and in some cases, CLRS may be a better alternative for some subjects
-                - chapters 7, 8, 9 can be painful to try to follow, as some items are not explained well or require more brain than I have
-                - don't get me wrong: I like Skiena, his teaching style, and mannerisms, but I may not be Stony Brook material.
-        - algorithm catalog:
-            - this is the real reason you buy this book.
-            - about to get to this part. Will update here once I've made my way through it.
-    - To quote Yegge: "More than any other book it helped me understand just how astonishingly commonplace
-        (and important) graph problems are – they should be part of every working programmer's toolkit. The book also
-        covers basic data structures and sorting algorithms, which is a nice bonus. But the gold mine is the second half
-        of the book, which is a sort of encyclopedia of 1-pagers on zillions of useful problems and various ways to solve
-        them, without too much detail. Almost every 1-pager has a simple picture, making it easy to remember. This is a
-        great way to learn how to identify hundreds of problem types."
-    - Can rent it on kindle
-    - Half.com is a great resource for textbooks at good prices.
     - Answers:
         - [Solutions](http://www.algorithm.cs.sunysb.edu/algowiki/index.php/The_Algorithms_Design_Manual_(Second_Edition))
         - [Solutions](http://blog.panictank.net/category/algorithmndesignmanualsolutions/page/2/)
     - [Errata](http://www3.cs.stonybrook.edu/~skiena/algorist/book/errata)
 
 - [ ] [Introduction to Algorithms](https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844)
-    - **Important:** Reading this book will only have limited value. This book is a great review of algorithms and data structures, but won't teach you how to write good code. You have to be able to code a decent solution efficiently.
-    - To quote Yegge: "But if you want to come into your interviews *prepped*, then consider deferring your application until you've made your way through that book."
-    - Half.com is a great resource for textbooks at good prices.
-    - aka CLR, sometimes CLRS, because Stein was late to the game
 
+### Interview Prep
+
+- [ ] [Cracking the Coding Interview, 6th Edition](http://www.amazon.com/Cracking-Coding-Interview-6th-Programming/dp/0984782850/)
+   
 ## Prerequisite Knowledge
 
 - [ ] **Learn C**
@@ -241,10 +198,6 @@ OR:
     - [Computational Complexity: Section 1](https://www.topcoder.com/community/data-science/data-science-tutorials/computational-complexity-section-1/)
     - [Computational Complexity: Section 2](https://www.topcoder.com/community/data-science/data-science-tutorials/computational-complexity-section-2/)
 - [ ] [Cheat sheet](http://bigocheatsheet.com/)
-
-
-    If some of the lectures are too mathy, you can jump down to the bottom and
-    watch the discrete mathematics videos to get the background knowledge.
 
 ## Data Structures
 
