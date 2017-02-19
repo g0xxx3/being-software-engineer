@@ -17,7 +17,7 @@ class Graph:
 
     def dfs_visit(self, s):
         stack = [s]
-        while stack:
+        while stack: 
             vertex = stack.pop()
             if vertex not in self.visited:
                 self.visited.add(vertex)
