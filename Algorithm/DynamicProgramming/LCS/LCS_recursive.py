@@ -13,7 +13,7 @@ def lcs(X, Y, m, n):
 def main():
     X = "AGGTAB"
     Y = "GXTXAYB"
-    print("Length of LIS is", lcs(X, Y, len(X), len(Y)))
+    print("Length of LCS is", lcs(X, Y, len(X), len(Y)))
 
 
 if __name__ == '__main__':
