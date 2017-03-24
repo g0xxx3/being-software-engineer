@@ -10,9 +10,9 @@ def coin_change_count(arr, m, n):
 
 
 def main():
-    arr = [2, 3, 5, 6]
+    arr = [1,2,3]
     m = len(arr)
-    print(coin_change_count(arr, m, 10))
+    print(coin_change_count(arr, m, 5))
 
 
 if __name__ == '__main__':
