@@ -10,24 +10,26 @@
 # ================================================================================================
 
 
-def make_urlify(s, true_length):
-    space_count = s[:true_length].count(' ')
+def make_urlify(url_string, true_length):
+    space_count = url_string[:true_length].count(' ')
 
     index = true_length + space_count * 2
     for i in range(true_length - 1, -1, -1):
-        if s[i] == ' ':
-            s[index - 1] = '0'
-            s[index - 2] = '2'
-            s[index - 3] = '%'
+        if url_string[i] == ' ':
+            url_string[index - 1] = '0'
+            url_string[index - 2] = '2'
+            url_string[index - 3] = '%'
             index -= 3
         else:
-            s[index - 1] = s[i]
+            url_string[index - 1] = url_string[i]
             index -= 1
 
-    return ''.join(s)
+    return ''.join(url_string)
 
+def build_app():
+    input_string = input()
+    string_length = int(input().strip())
+    print(make_urlify(list(input_string), string_length))
 
 if __name__ == '__main__':
-    input_str = input()
-    length = int(input().strip())
-    print(make_urlify(list(input_str), length))
+    build_app()
