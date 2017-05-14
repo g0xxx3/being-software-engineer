@@ -40,7 +40,7 @@ def is_unique_memory_efficient(s):
 
 
 # Solution #3: If we are not allowed to create additional data structure
-# we can perform the functionality in O(n**2)
+# we can perform the functionality in O(n^2)
 def is_unique_without_data_structure(s):
     for i in range(len(s)):
         for j in range(i + 1, len(s)):
