@@ -8,26 +8,6 @@ class Node(object):
         self.next = None
         self.value = v
 
-def delete_dups(node):
-    if not node and not node.next:
-        return node
-
-    visited_items = set()
-    previous_node = node
-    current_node = node.next
-    visited_items.add(node.value)
-    while current_node:
-        if current_node.value in visited_items:
-            previous_node.next = current_node.next
-        else:
-            visited_items.add(current_node.value)
-            previous_node = current_node
-
-        current_node = current_node.next
-
-    return node
-
-
 def find_kth_element_from_end(head, k):
     fast_forward = head
     slow_forward = head
