@@ -47,6 +47,8 @@ class StringDecompressor:
 
 if __name__ == '__main__':
     stringDecompressor = StringDecompressor()
+    print(stringDecompressor.decompress('a(b(c))d'))
+    print(stringDecompressor.decompress('a(b(c)){2}d'))
     print(stringDecompressor.decompress('a(b(c){2}){2}d'))
     print(stringDecompressor.decompress('((x){3}(y){2}z){2}'))
     print(stringDecompressor.decompress('x((x){3}(y){2}z){2}'))
