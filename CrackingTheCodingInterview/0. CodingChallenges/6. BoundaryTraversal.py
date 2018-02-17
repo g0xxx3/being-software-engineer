@@ -10,8 +10,12 @@ class Node:
 
 def getLeftBoundaryNodes(node):
     if node and node.data:
-        print(node.data)
-        getLeftBoundaryNodes(node.left)
+        if node.left:
+            print(node.data)
+            getLeftBoundaryNodes(node.left)
+        elif node.right:
+            print(node.data)
+            getLeftBoundaryNodes(node.right)
     pass
 
 
@@ -26,31 +30,23 @@ def getLeafNodes(node):
 
 def getRightBoundaryNodes(node):
     if node and node.data:
-        getRightBoundaryNodes(node.right)
-        print(node.data)
+        if node.right:
+            getRightBoundaryNodes(node.right)
+            print(node.data)
+        elif node.left:
+            getRightBoundaryNodes(node.left)
+            print(node.data)
     pass
 
 
 def getBoundaryNodes(node):
-    traverse(node)
-
-    print("")
-    print("")
+    print(node.data)
     if node and node.data:
-        getLeftBoundaryNodes(node)
+        getLeftBoundaryNodes(node.left)
         getLeafNodes(node.left)
         getLeafNodes(node.right)
-        getRightBoundaryNodes(node)
+        getRightBoundaryNodes(node.right)
     pass
-
-
-def traverse(node):
-    if node and node.data:
-        print(node.data)
-        traverse(node.left)
-        traverse(node.right)
-
-
 
 
 if __name__ == '__main__':
@@ -63,8 +59,7 @@ if __name__ == '__main__':
     root.right.left = Node(8)
     root.right.left.left = Node(6)
     root.right.right = Node(7)
-    traverse(root)
-    # getBoundaryNodes(root)
+    getBoundaryNodes(root)
 
     print('')
     print('')
@@ -75,5 +70,4 @@ if __name__ == '__main__':
     root.right.left = Node(8)
     root.right.left.left = Node(6)
     root.right.right = Node(7)
-    traverse(root)
-    # getBoundaryNodes(root)
+    getBoundaryNodes(root)

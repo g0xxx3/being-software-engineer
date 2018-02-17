@@ -8,9 +8,9 @@ class Node:
         self.right = None
 
 
-def traverse_level(root):
-    if root:
-        queue = deque([root])
+def traverse_level(node):
+    if node:
+        queue = deque([node])
         while len(queue):
             item = queue.popleft()
             print(item.data)
