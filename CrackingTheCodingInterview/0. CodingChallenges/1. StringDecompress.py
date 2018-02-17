@@ -7,7 +7,7 @@ class StringDecompressor:
     def __init__(self):
         self.stack = []
 
-    def decompress_string(self, text):
+    def decompress(self, text):
         result = []
         current_text = []
         for ch in text:
@@ -52,7 +52,7 @@ class StringDecompressor:
 
 if __name__ == '__main__':
     stringDecompressor = StringDecompressor()
-    print(stringDecompressor.decompress_string('a(b(c){2}){2}d'))
-    print(stringDecompressor.decompress_string('((x){3}(y){2}z){2}'))
-    print(stringDecompressor.decompress_string('x((x){3}(y){2}z){2}'))
-    print(stringDecompressor.decompress_string('x((x){3}(y){2}z){2}z'))
+    print(stringDecompressor.decompress('a(b(c){2}){2}d'))
+    print(stringDecompressor.decompress('((x){3}(y){2}z){2}'))
+    print(stringDecompressor.decompress('x((x){3}(y){2}z){2}'))
+    print(stringDecompressor.decompress('x((x){3}(y){2}z){2}z'))
