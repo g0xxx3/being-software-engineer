@@ -8,26 +8,20 @@ class StringDecompressor:
         self.stack = []
 
     def decompress(self, text):
-        result = []
+        self.stack = []
         current_text = []
         for ch in text:
+            # end of the character sequence
             if ch == ')':
-                temp = self.get_text()
-                temp.extend(current_text)
-                current_text = temp
+                current_text += self.get_text()
+            # end of the multiplier sequence
             elif ch == '}':
-                current_text = current_text * self.get_multiplier()
-            elif len(self.stack) == 0 and ch != '(' and ch != '{':
-                result.extend(current_text)
-                result.append(ch)
+                self.stack += current_text * self.get_multiplier()
                 current_text = []
             else:
                 self.stack.append(ch)
 
-        if len(current_text) != 0:
-            result.extend(reversed(current_text))
-
-        return ''.join(result)
+        return ''.join(self.stack)
 
     def get_text(self):
         substring = []
@@ -36,7 +30,7 @@ class StringDecompressor:
             if ch == '(':
                 break
             substring.append(ch)
-        return substring
+        return reversed(substring)
 
     def get_multiplier(self):
         mult = 0
