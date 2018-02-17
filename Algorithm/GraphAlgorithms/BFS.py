@@ -40,4 +40,5 @@ for _ in range(ts):
         graph.add_edge(a - 1, b - 1)
     s = int(input().strip()) - 1
     distances = graph.breadth_first_search(s)
-    print(*[distances[i] for i in range(len(distances)) if i != s])
+    result = [distances[i] for i in range(len(distances)) if i != s]
+    print(result)
